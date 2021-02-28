@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code fellows store</title>
+ <style>
+
+#demo1{
+
+background-color: blue;
+color: cornsilk;
+display: inline-block;
+}
+
+#demo2{
+    display: inline-block;
+}
+
+.nav1{
+background-color: blue;
+
+
+}
+
+.footer1 {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+
+
+.left_items {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.li1 {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+ </style>
+
+</head>
+<body>
+<header>
+ <nav class="nav1">
+<ul class="left_items">
+<li class="li1"  >home</li>
+<li class="li1"  >about us </li>
+<li class="li1 " >products </li>
+<li class="li1" >contact us</li>
+ 
+
+
+    </ul>   
+   </nav>
+   </header> 
+
+   <main>
+
+  <h1 id = "demo1"> class 1 lab  </h1> <br/>
+  
+  <p class="demo2" id="Custname" style="border: groove ; background-color: gray; color:darkblue;; padding: 5px; font-size: large; display:inline-block" >  </p> <br/>
+  <p class="demo2" id="custnum" style="border: groove;background-color: gray; color:darkred; padding: 5px; font-size: large; display:inline-block"  >   </p> <br/> 
+  <p class="demo2" id="productname" style="border: groove;background-color: gray; color:darkgreen; padding: 5px; font-size: large; display:inline-block"  >   </p> <br/>
+  <p class="demo2" id="feedback" style="border: groove;background-color: gray; color :darkorange; padding: 5px; font-size: large; display:inline-block"   >   </p>
+
+
+   </main>
+
+   <footer class="footer1">
+
+<h4 > copy right &COPY;  </h4>
+   </footer>
+
+</body>
+<script >
+
+let customerName=  prompt("what is your name?" );
+let  customerNumber= prompt("what is your phone number ?");
+let product=prompt("what do you want to buy from code fellow store ? ");
+let services=prompt("plz tell us how is our service  ?");
+
+
+alert('hello ' + customerName + '\n' + 'your phone number is ' + customerNumber + '\n' + 'you bought ' + product + '\n' + 'your feed back is ' + services );
+
+
+console.log('customer name is ' + customerName ); 
+console.log('customer number is ' + customerNumber ); 
+console.log('the product is ' + product );  
+console.log('the feed back is ' + services );
+
+
+ document.getElementById("Custname").innerHTML=  "what is your name?\r" + "<br>"  + "your name is " + customerName ;
+ 
+ document.getElementById("custnum").innerHTML= "what is your phone number ?" + "<br>"  + "your number is " + customerNumber;
+ 
+ document.getElementById("productname").innerHTML= "what do you want to buy from code fellow store ?" +"<br>" +"you have bought " + product ;
+ 
+ document.getElementById("feedback").innerHTML= " plz tell us how is our service  ?" +"<br>"+ "your feed back is "+  services ;
+
+
+
+</script>
+</html>
